@@ -1,24 +1,51 @@
-<% if signed_in? %>
-<div class="row">
-	<aside class="span4">
-		<section>
-			<%= render 'shared/user_info' %>
-		</section>
-		<section>
-			<%= render 'shared/micropost_form' %>
-		</section>
-	</aside>
-	<div class="span8">
-		<h3>Micropost Feed</h3>
-		<%= render 'shared/feed' %>
-	</div>
-</div>
-<% else %>
-<div class="center hero-unit">
-	<h1>Welcome to the SHPE UIUC</h1>
 
-	<h2> This is the home page for SHPE UIUC </h2>
 
-</div>
 
-<% end %> 
+
+  <div class="jumbotron">
+    <div class="row">
+        <div class="span6">
+            <h1>I am Sean Freiburg</h1>
+            <p class="lead">Computer Science major at University of Illinois Urbana Champaign. I love creating new and cool applications. </p>
+            <%= link_to "Contact Me", contact_path, :class => "btn btn-large btn-primary" %>
+        </div>
+        <div class="span6">
+            <%= image_tag("sean.jpg", :size => "300x300", :class => "img-polaroid") %>
+        </div>
+    </div>
+  </div>
+
+  <hr>
+  <div class="row">
+    <div class="span12">
+         <h2> Major Projects</h2>
+    </div>
+  </div>
+  <div class="row-fluid marketing">
+    <div class="span6">
+      <h4>Webserver in C</h4>
+      <p>A HTTP server that opens a new thread for each client. </p>
+
+      <h4>Github Ranking Web App</h4>
+      <p>Website that lets a user search ranked GitHub developers by language and location. GitHub developers are ranked by their followers and impact of their repositories. This is a Ruby on Rails web app created during RECSOLU's hackathon with the first place award. </p>
+
+      <h4>Project X</h4>
+      <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+    </div>
+
+    <div class="span6">
+      <h4>Project X</h4>
+      <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+      <h4>Project X</h4>
+      <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+      <h4>Project X</h4>
+      <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+    </div>
+  </div>
+
+</div> <!-- /container -->
+
+
+
