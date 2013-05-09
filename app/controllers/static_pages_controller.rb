@@ -1,9 +1,7 @@
 class StaticPagesController < ApplicationController
   def home
-    if signed_in?
-      @micropost = current_user.microposts.build
-      @feed_items = current_user.feed.paginate(page: params[:page])
-    end
+    @projects1 = Project.last(3).reverse!
+    @projects2 = Project.offset(3).last(3).reverse!
   end
 
   def help
