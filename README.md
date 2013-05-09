@@ -1,3 +1,3 @@
-# SHPE-UIUC Website
+# My personal website, seanfreiburg.com
 
-Because our site is old.
+I like to be fancy :)
