@@ -17,4 +17,10 @@
 
   </div>
 </div>
+<br><br>
 
+<div class="row">
+ <div class="span6 offset3">
+   <p>New user? <%= link_to "Sign up now!", signup_path, class: "btn btn-primary" %></p>
+ </div>
+</div>

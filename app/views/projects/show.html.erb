@@ -1,25 +1,18 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Name:</b>
-  <%= @project.name %>
-</p>
+<h1>
+  <%=link_to @project.name, @project.link %>
+</h1>
 
 <p>
   <b>Description:</b>
   <%= @project.description %>
 </p>
+<div class="row center"> 
+	<%= image_tag @project.picture_link, :size => '500x500' %>
+</div>
 
-<p>
-  <b>Picture link:</b>
-  <%= @project.picture_link %>
-</p>
-
-<p>
-  <b>Link:</b>
-  <%= @project.link %>
-</p>
-
-
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+<div class="row center">
+	<%= link_to 'Edit', edit_project_path(@project) if signed_in? %> |
+	<%= link_to 'Back', projects_path %>
+</div>
