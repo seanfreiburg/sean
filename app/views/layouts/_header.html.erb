@@ -7,7 +7,7 @@
       <li><%= link_to "Contact", contact_path %></li>
       <li><%= link_to "Sign out", signout_path, method: "delete"  if signed_in?%></li>
     </ul>
-    <h3 class="muted">seanfreiburg.com</h3>
+    <h3 class="muted"><%= link_to 'seanfreiburg.com', root_path %></h3>
   </div>
 
   <hr>
