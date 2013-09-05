@@ -38,7 +38,7 @@
     <% for project in @projects2 %>
         <h4><%= link_to project.name, project %></h4>
 
-        <p><%= truncate(project.description, :length => 25, :omission => '... (continued)') %>
+        <p><%= truncate(project.description, :length => 75, :omission => '... (continued)') %>
           <%= link_to 'Delete', project, method: :delete, :class => 'btn btn-danger', data: {confirm: 'Are you sure?'} if signed_in? %>
         </p>
     <% end %>
