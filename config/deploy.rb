@@ -12,8 +12,8 @@ set :application, "sean"
 
 set :use_sudo, false
 
-default_environment["GEM_PATH"] ="/home/deployer/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1:/home/deployer/.rbenv/shims/ruby"
-default_environment["PATH"] = "$HOME/.rbenv/shims:$HOME/.rbenv/bin:$HOME/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1:$PATH"
+default_environment["GEM_PATH"] ="/usr/local/rvm/gems/ruby-2.0.0-p353"
+default_environment["PATH"] = "$PATH"
 
 set :deploy_via, :remote_cache
 
