@@ -7,7 +7,7 @@
         applications. </p>
       <%= link_to "Contact Me", contact_path, :class => "btn btn-large btn-primary" %>
       <%= link_to 'My Github', 'https://github.com/seanfreiburg', :class => "btn btn-large btn-success" %>
-      <%= link_to 'My Resume', 'https://github.com/seanfreiburg/resume/blob/master/resume.pdf?raw=true', class: 'btn btn-large'%>
+      <%= link_to 'My Resume', 'https://github.com/seanfreiburg/resume/blob/master/resume.pdf?raw=true', class: 'btn btn-large' %>
     </div>
     <div class="span6">
       <%= image_tag("sean.jpg", :size => "300x300", :class => "img-polaroid") %>
@@ -15,40 +15,7 @@
   </div>
 </div>
 
-<hr>
-<div class="row">
-  <div class="span12">
-    <h2> Recent Projects</h2>
-    <%= link_to "Add Project", new_project_path, :class => 'btn btn-primary' if signed_in? %>
-  </div>
-</div>
-<div class="row-fluid marketing">
-  <div class="span6">
-    <% for project in @projects1 %>
-        <h4><%= link_to project.name, project %></h4>
 
-        <p><%= truncate(project.description, :length => 75, :omission => '... (continued)') %>
-          <%= link_to 'Delete', project, method: :delete, :class => 'btn btn-danger', data: {confirm: 'Are you sure?'} if signed_in? %>
-        </p>
-
-    <% end %>
-  </div>
-
-  <div class="span6">
-    <% for project in @projects2 %>
-        <h4><%= link_to project.name, project %></h4>
-
-        <p><%= truncate(project.description, :length => 75, :omission => '... (continued)') %>
-          <%= link_to 'Delete', project, method: :delete, :class => 'btn btn-danger', data: {confirm: 'Are you sure?'} if signed_in? %>
-        </p>
-    <% end %>
-  </div>
-  <div class="span12">
-  <div class="center">
-  <%= link_to 'All Projects', projects_path, class: 'btn btn-large' %>
-  </div>
-  </div>
-</div> <!-- /container -->
 
 
 
