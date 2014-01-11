@@ -4,7 +4,7 @@ require "bundler/capistrano"
 set :stages, %w(develop production ci)
 set :default_stage, "develop"
 require 'capistrano/ext/multistage'
-server "seanfreiburg.com", :app, :web, :db, :primary => true
+server "162.243.222.216", :app, :web, :db, :primary => true
 set :user, "root" # The server's user for deploys
 set :scm_passphrase, "emagxgestqkf" # The deploy user's password
 
