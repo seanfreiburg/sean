@@ -1,46 +1,47 @@
-require "bundler/capistrano"
-#load 'lib/deploy/seed' #include if you need to load seed data with cap deploy:seed
+set :application, 'my_app_name'
+set :repo_url, 'git@example.com:me/my_repo.git'
 
-set :stages, %w(develop production ci)
-set :default_stage, "develop"
-require 'capistrano/ext/multistage'
-server "162.243.222.216", :app, :web, :db, :primary => true
-set :user, "root" # The server's user for deploys
-set :scm_passphrase, "emagxgestqkf" # The deploy user's password
+# ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
-set :application, "sean"
-
-set :use_sudo, false
-
-#default_environment["GEM_PATH"] ="/usr/local/rvm/gems/ruby-2.0.0-p353"
-#default_environment["PATH"] = "$PATH"
-
-set :deploy_via, :remote_cache
-
-after "deploy", "deploy:cleanup" # keep only the last 5 releases
-after "deploy:update_code", "deploy:migrate"
-after "deploy:cleanup", "deploy:seed"
-
-set :scm, "git"
-set :scm_verbose, true
+set :deploy_to, '/home/sean'
+set :scm, :git
 set :repository, "git@github.com:seanfreiburg/sean.git"
+set :branch, "master"
+set :user, "root"
+set :scm_passphrase, "aygkcauntboa"
+set :rails_env, "production"
+set :deploy_via, :copy
+server "162.243.222.216", :app, :web, :db, :primary => true
 
+set :format, :pretty
+set :log_level, :debug
+# set :pty, true
 
-default_run_options[:pty] = true # Must be set for the password prompt from git to work
-ssh_options[:forward_agent] = true
+# set :linked_files, %w{config/database.yml}
+# set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
+
+# set :default_env, { path: "/opt/ruby/bin:$PATH" }
+set :keep_releases, 5
 
 namespace :deploy do
-# If you need to load seed data. Syntax: cap deploy:seed
-  desc "Reload the database with seed data"
-  task :seed do
-    run "cd #{current_path}; bundle exec rake db:seed RAILS_ENV=#{rails_env}"
+
+  desc 'Restart application'
+  task :restart do
+    on roles(:app), in: :sequence, wait: 5 do
+      # Your restart mechanism here, for example:
+      execute :touch, release_path.join('tmp/restart.txt')
+    end
   end
 
-  task :start do ; end
-  task :stop do ; end
-
-  task :restart, :roles => :app, :except => { :no_release => true } do
-    run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}" #restarts nginx
+  after :restart, :clear_cache do
+    on roles(:web), in: :groups, limit: 3, wait: 10 do
+      # Here we can do anything such as:
+      # within release_path do
+      #   execute :rake, 'cache:clear'
+      # end
+    end
   end
+
+  after :finishing, 'deploy:cleanup'
+
 end
-
