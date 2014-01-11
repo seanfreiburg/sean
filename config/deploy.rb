@@ -12,8 +12,8 @@ set :application, "sean"
 
 set :use_sudo, false
 
-default_environment["GEM_PATH"] ="/usr/local/rvm/gems/ruby-2.0.0-p353"
-default_environment["PATH"] = "$PATH"
+#default_environment["GEM_PATH"] ="/usr/local/rvm/gems/ruby-2.0.0-p353"
+#default_environment["PATH"] = "$PATH"
 
 set :deploy_via, :remote_cache
 
