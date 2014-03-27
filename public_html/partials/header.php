@@ -11,10 +11,10 @@
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-sm-6">
       <a href="index.php"><h1>seanfreiburg.com</h1></a>
     </div>
-    <div class="col-md-6 text-center">
+    <div class="col-sm-6 text-center">
       <?php include 'nav_links.php'?>
     </div>
   </div>
