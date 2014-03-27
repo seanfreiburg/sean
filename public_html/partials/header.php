@@ -15,7 +15,8 @@
       <a href="index.php"><h1>seanfreiburg.com</h1></a>
     </div>
     <div class="col-md-6 text-center">
-      <a href="about.php">help</a> \ <a href="contact.php">contact</a> \ <a href="projects.php">projects</a>
+      <?php include 'nav_links.php'?>
     </div>
   </div>
-  <hr>
+</div>
+<hr>
