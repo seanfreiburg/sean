@@ -3,7 +3,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-6">
-      <h1>Add to this</h1>
+      <h1>Updating... give me some time...</h1>
     </div>
   </div>
 </div>
