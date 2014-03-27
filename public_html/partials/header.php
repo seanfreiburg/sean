@@ -8,3 +8,14 @@
 
 </head>
 <body>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <a href="index.php"><h1>seanfreiburg.com</h1></a>
+    </div>
+    <div class="col-md-6 text-center">
+      <a href="about.php">help</a> \ <a href="contact.php">contact</a> \ <a href="projects.php">projects</a>
+    </div>
+  </div>
+  <hr>

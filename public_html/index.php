@@ -1,15 +1,6 @@
 <?php include 'partials/header.php' ?>
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-6">
-            <h1>seanfreiburg.com</h1>
-        </div>
-        <div class="col-md-6 text-center">
-            help \ contact
-        </div>
-    </div>
-    <hr>
+
     <div class="row">
         <div class="col-md-6 text-center">
             <h1>I am Sean Freiburg</h1>
@@ -37,6 +28,8 @@
     <hr>
 
 </div>
+
+
 
 <?php include 'partials/footer.php' ?>
 
