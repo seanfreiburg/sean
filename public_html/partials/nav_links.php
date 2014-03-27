@@ -1,1 +1,1 @@
-<a href="about.php">about</a> \ <a href="contact.php">contact</a> \ <a href="projects.php">projects</a>
+<a class="nav-link" href="about.php">about</a> \ <a  class="nav-link" href="contact.php">contact</a> \ <a  class="nav-link" href="projects.php">projects</a>

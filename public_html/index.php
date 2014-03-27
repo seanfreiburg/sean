@@ -11,22 +11,22 @@
       <div class="row">
         <div class="col-sm-3">
           <a href="contact.php">
-            <button class="btn btn-default btn-block">contact me</button>
+            <button class="btn btn-default btn-lg btn-block">contact me</button>
           </a>
         </div>
         <div class="col-sm-3">
           <a href="https://github.com/seanfreiburg">
-            <button class="btn btn-default btn-block">github</button>
+            <button class="btn btn-default btn-lg btn-block">github</button>
           </a>
         </div>
         <div class="col-sm-3">
           <a href="projects.php">
-            <button class="btn btn-default btn-block">projects</button>
+            <button class="btn btn-default  btn-lg btn-block">projects</button>
           </a>
         </div>
         <div class="col-sm-3">
           <a href="about.php">
-            <button class="btn btn-default btn-block">resume</button>
+            <button class="btn btn-default  btn-lg btn-block">resume</button>
           </a>
         </div>
       </div>
