@@ -2,8 +2,8 @@
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-6">
-      <h1>Updating... give me some time...</h1>
+    <div class="col-md-6 col-md-offset-3">
+      <a href="https://github.com/seanfreiburg"><h1> Go check out my github</h1></a>
     </div>
   </div>
 </div>
