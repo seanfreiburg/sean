@@ -2,7 +2,7 @@
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-6 text-center">
+    <div class="col-md-9 text-center">
       <h1>I am Sean Freiburg</h1>
 
       <h3>Computer Science major at University of Illinois Urbana-Champaign. Full stack developer. Starting at Microsoft
@@ -11,27 +11,27 @@
       <div class="row">
         <div class="col-md-3">
           <a href="contact.php">
-            <button class="btn btn-default btn-lg btn-block">contact me</button>
+            <h3> contact me</h3>
           </a>
         </div>
         <div class="col-md-3">
           <a href="https://github.com/seanfreiburg">
-            <button class="btn btn-default btn-lg btn-block">github</button>
+            <h3> github</h3>
           </a>
         </div>
         <div class="col-md-3">
           <a href="projects.php">
-            <button class="btn btn-default  btn-lg btn-block">projects</button>
+            <h3> projects</h3>
           </a>
         </div>
         <div class="col-md-3">
           <a href="about.php">
-            <button class="btn btn-default  btn-lg btn-block">resume</button>
+            <h3> resume</h3>
           </a>
         </div>
       </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-3">
       <img src="assets/img/sean.jpg" class="img-responsive img-rounded center" height="400px" width="400px">
     </div>
   </div>
