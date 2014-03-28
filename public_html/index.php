@@ -2,7 +2,7 @@
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-9 text-center">
+    <div class="col-md-12 text-center">
       <h1>I am Sean Freiburg</h1>
 
       <h3>Computer Science major at University of Illinois Urbana-Champaign. Full stack developer. Starting at Microsoft
@@ -31,11 +31,36 @@
         </div>
       </div>
     </div>
-    <div class="col-md-3">
-      <img src="assets/img/sean.jpg" class="img-responsive img-rounded center" height="400px" width="400px">
-    </div>
+
   </div>
   <hr>
+
+   <div class="row">
+       <div class="col-md-12">
+        <h2 class="text-center">sites</h2>
+       </div>
+  </div>
+
+  <div class="row">
+     <div class="col-md-4">
+     <a href="http://seanfreiburg.com"><img src="assets/img/sean.jpg" class="img-responsive img-rounded center" height="800px"  ></a>
+
+       </div>
+
+
+        <div class="col-md-4">
+        <a href="http://unbury.us"><img src="assets/img/unbury.png" class="img-responsive img-rounded center" ></a>
+
+         </div>
+
+         <div class="col-md-4">
+         <a href="http://shpe-uiuc.org">
+            <img src="assets/img/shpe.png" class="img-responsive img-rounded center"  >
+         </a>
+
+         </div>
+    </div>
+
 
 </div>
 
