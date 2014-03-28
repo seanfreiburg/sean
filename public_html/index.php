@@ -1,6 +1,6 @@
 <?php include 'partials/header.php' ?>
 
-<div class="container">
+<div class="container-fluid">
   <div class="row">
     <div class="col-sm-6 text-center">
       <h1>I am Sean Freiburg</h1>
