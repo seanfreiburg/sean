@@ -30,7 +30,7 @@
 
       <h4>Software Engineering Intern at RecSolu</h4>
 
-      <p>June 2013 - Present</p>
+      <p>June 2013 - September 2013</p>
 
       <p>
         Headed RecPass development releasing several large features including tracking of accepted privacy policies and
@@ -112,15 +112,19 @@
       <h2>Courses</h2>
       <h4>Current Courses</h4>
       <ul>
-        <li>Algorithms (CS 473)</li>
-        <li>Senior Project (CS 492)</li>
-        <li>Programming Studio (CS 242)</li>
-        <li>Ethics (CS 210)</li>
+        <li>Theory of Computation (CS 373)</li>
+        <li>Senior Project (CS 493)</li>
+        <li>Social Visualizations (CS 467)</li>
+        <li>Distributed Systems (CS 425)</li>
         <li>Compilers and Programming Languages (CS 421)</li>
-        <li>Numerical Methods (CS 357)</li>
       </ul>
       <h4>Past Courses</h4>
       <ul>
+      <li>Algorithms (CS 473)</li>
+      <li>Senior Project (CS 492)</li>
+            <li>Programming Studio (CS 242)</li>
+              <li>Ethics (CS 210)</li>
+              <li>Numerical Methods (CS 357)</li>
         <li>Database Systems (CS 411)</li>
 
         <li>User Interface Design (CS 465)</li>

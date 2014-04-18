@@ -41,25 +41,7 @@
        </div>
   </div>
 
-  <div class="row">
-     <div class="col-sm-4">
-     <a href="http://seanfreiburg.com"><img src="assets/img/sean.jpg" class="img-responsive img-rounded center" height="800px"  ></a>
 
-       </div>
-
-
-        <div class="col-sm-4">
-        <a href="http://unbury.us"><img src="assets/img/unbury.png" class="img-responsive img-rounded center" ></a>
-
-         </div>
-
-         <div class="col-sm-4">
-         <a href="http://shpe-uiuc.org">
-            <img src="assets/img/shpe.png" class="img-responsive img-rounded center"  >
-         </a>
-
-         </div>
-    </div>
 
 
 </div>
