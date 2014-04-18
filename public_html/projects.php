@@ -21,9 +21,8 @@
       </div>
 
         <div class="row">
-          <div class="col-sm-6 col-sm-offset-3">
-          <a>
-            <a href="https://github.com/seanfreiburg"><h4> Go check out my github</h4></a>
+          <div class="col-sm-12">
+            <a href="https://github.com/seanfreiburg" class="text-center"><h4> Go check out my github</h4></a>
           </div>
         </div>
 </div>
